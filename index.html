@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>GOLA – PIZZA ALLA ROMANA</title>
+</head>
+<style>
+	
+  @-webkit-keyframes argh-my-eyes {
+    0%   { background-color: #fef200; }
+    50% { background-color: #ef0a1a; }
+    100% { background-color: #fef200; }
+  }
+  @-moz-keyframes argh-my-eyes {
+    0%   { background-color: #fef200; }
+    50% { background-color: #ef0a1a; }
+    100% { background-color: #fef200; }
+  }
+  @keyframes argh-my-eyes {
+    0%   { background-color: #fef200; }
+    50% { background-color: #ef0a1a; }
+    100% { background-color: #fef200; }
+  }
+  body {
+  -webkit-animation: argh-my-eyes 8s infinite;
+  -moz-animation:    argh-my-eyes 8s infinite;
+  animation:         argh-my-eyes 8s infinite;
+}
+
+	#logo {text-align: center; margin-top: 140px; z-index: 1; }
+
+</style>
+<body>
+
+	<div id="logo"> <img id="image" src="/assets/G1.png"/>
+</br>
+	<div class="block"><img src="/assets/base.png" width="627" height="168" alt=""/></div></div>
+
+<script type="text/javascript">
+      var imageSources = ["/assets/G1.png", "/assets/G2.png","/assets/G3.png","/assets/G4.png","/assets/G5.png","/assets/G6.png","/assets/G7.png","h/assets/G8.png"]
+
+      var index = 0;
+      setInterval(function(){
+        if (index === imageSources.length) {
+          index = 0;
+        }
+        document.getElementById("image").src = imageSources[index];
+        index++;
+      }, 500);
+</script>
+
+</body>
+ 
+</html>
